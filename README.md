@@ -1,2 +1,2 @@
 # Calc
-Simple console calculator
+Simple console calculator on C.

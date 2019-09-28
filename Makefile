@@ -27,6 +27,8 @@ string.o: string.c
 suf_trans.o: suf_trans.c
 	$(GCC) $(CFLAGS) suf_trans.c
 
+elem.o: elem.c
+	$(GCC) $(CFLAGS) elem.c
 .PHONY: clean
 clean:
 	rm -rf *.o calc

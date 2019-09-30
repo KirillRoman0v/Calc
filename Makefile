@@ -2,7 +2,8 @@ GCC = gcc
 FLAGS = -o
 CFLAGS = -c -Wall
 OBJECTS = (SOURCES:.c=.o)
-SOURCES = main.c menu.c queue_stack.c str_analyze.c string.c suf_trans.c
+SOURCES = main.c menu.c queue_stack.c str_analyze.c string.c suf_trans.c elem.c
+HEADERS = (SOURCES:.c=.h)
 .PHONY: all
 all: calc 
 
@@ -29,6 +30,7 @@ suf_trans.o: suf_trans.c
 
 elem.o: elem.c
 	$(GCC) $(CFLAGS) elem.c
+
 .PHONY: clean
 clean:
 	rm -rf *.o calc
